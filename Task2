@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100vh;
+    }
+    
+    .weather-app{
+        background-color: rgb(139, 155, 49);
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 15px;
+    }
+    
+    .search-form{
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    input[type="text"]{
+        flex: 1;
+        padding: 20px;
+        border: 2px solid #3498db;
+        border-radius: 15px;
+        font-size: 1rem; 
+    }
+    
+    .search-btn{
+        background-color: #3498db;
+        border: none;
+        padding: 15px;
+        border-radius: 15px;
+        cursor: pointer;
+        color: white;
+        margin: 10px;
+        transition: background-color 0.3s ease;
+    
+    }
+    
+    
+    .search-btn:hover{
+        background-color: #2980b9;
+    }
+    
+    .city-date-section{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .city-date-section .city{
+        font-size: 2rem;
+        opacity: 0.9;
+    }
+    
+    .city-date-section .date{
+        background-color: aqua;
+        padding: 5px 10px;
+        border-radius: 15px;
+    }
+    
+    .tempreature-info{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .tempreature-info .temp{
+        font-size: 10rem;
+    }
+    .tempreature-info .description{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .tempreature-info .description i {
+        font-size: 1.5rem;
+        opacity: 0.8;
+    }
+    .tempreature-info .description span{
+        font-size: 1.5rem;
+    }
+    
+    .additional-info{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .wind-info, .humidity-info, .visibility-info{
+        background-color: #2980b9;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        border-radius: 15px;
+        padding: 30px 20px;
+        box-shadow: rgba(red, green, blue, alpha);
+    }
+    
+    .additional-info .material-icons{
+        font-size: 2rem;
+        opacity: 0.8;
+    }
+    
+    .wind-info div, .humidity-info div, .visibility-info div{
+        text-align: center;
+        width: 200px;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="weather-app">
+        <form class="search-form" action="">
+            <input class="city-input" type="text" placeholder="Enter city name"/>
+            <button class="search-btn" type="submit">
+                <i class="material-icons">search</i>
+            </button>
+        </form>
+        <div class="city-date-section">
+            <h2 class="city">Delhi</h2>
+            <p class="date"> 25 july 2024</p>
+        </div>
+        <div class="tempreature-info">
+            <div class="description">
+                <i class="material-icons">sunny</i>
+                <span class="description-text">sunny</span>
+            </div>
+            <div class="temp">20°</div>
+        </div>
+        <div class="additional-info">
+            <div class="wind-info">
+                <i class="material-icons">air</i>
+                <div>
+                    <h3 class="wind-speed">4 km/hr</h3>
+                    <p class="wind-label">wind</p>
+                </div>
+            </div>
+            <div class="humidity-info">
+                <i class="material-icons">water_drop</i>
+                <div>
+                    <h3 class="humidity">45%</h3>
+                    <p class="humidity">humidity</p>
+                </div>
+            </div>
+            <div class="visibility-info">
+                <i class="material-icons">visibility</i>
+                <div>
+                    <h3 class="visibility-distance">4 km/hr</h3>
+                    <p class="visibility">visibility</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
