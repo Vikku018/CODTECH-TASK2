@@ -1,28 +1,30 @@
+# Details
 Name: VIKKU KUMAR
 Company: CODTECH IT SOLUTIONS
 I'D: CT4WD4648
-Domain: WEB DEVELOPMENT 
-Duration: July to August 2024
+Domain: WEB DEVELOPMENT
 Mentor: muzammil Ahmed
 
 
-Weather Forecast App
+## Weather Forecast App
 
 
-• Overview:
+# Overview:
         
-         Developed a responsive web application that provides real-time weather forecasts for any location worldwide.
+   Developed a responsive web application that provides real-time weather forecasts for any location worldwide.
+
+Local host link: http://127.0.0.1:5500/index.html
          
-Technologies Used:-
+# Technologies Used:-
 
   •  Frontend: HTML, CSS, JavaScript, React.js
   • Backend: Node.js, Express.js
- •  API Integration: OpenWeatherMap API for fetching weather data
- • Database: MongoDB for storing user preferences and search history
+  •  API Integration: OpenWeatherMap API for fetching weather data
+  • Database: MongoDB for storing user preferences and search history
   • Hosting: Deployed on Heroku (or any other hosting service)
 
 
-Key Features:-
+# Key Features:-
 
   • Real-time Data: Users can search for current weather conditions and 7-day forecasts by city name or GPS location.
   • Interactive UI: User-friendly interface with dynamic weather icons and responsive design for mobile and desktop views.
